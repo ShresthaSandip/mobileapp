@@ -56,7 +56,7 @@ header {
 #btn1 {
     position: relative;
     margin: 20px auto;
-    width: 150px;
+    width: 250px;
     height: 250px;
     background-image: url(../img/omikuji.png);
     background-size: contain;
@@ -71,23 +71,23 @@ header {
 
 @keyframes shaking {
     0% {
-        transform: translate(0px, 0px) rotateZ(0deg)
+        transform: ranslate(0px, 0px) rotateZ(0deg)
     }
 
     25% {
-        transform: translate(2px, 2px) rotateZ(1deg)
+        transform: ranslate(2px, 2px) rotateZ(1deg)
     }
 
     50% {
-        transform: translate(0px, 2px) rotateZ(0deg)
+        transform: ranslate(0px, 2px) rotateZ(0deg)
     }
 
     75% {
-        transform: translate(2px, 0px) rotateZ(-1deg)
+        transform: ranslate(2px, 0px) rotateZ(-1deg)
     }
 
     100% {
-        transform: translate(0px, 0px) rotateZ(0deg)
+        transform: ranslate(0px, 0px) rotateZ(0deg)
     }
 }
 
@@ -171,6 +171,20 @@ footer>p {
     }
 }
 
+.back {
+    text-align: left;
+}
+
+#btn99 {
+    padding: 0.5em;
+    border-radius: 0.3em;
+    color: whitesmoke;
+    font-size: 1.5em;
+    background: rgb(26, 212, 212);
+    cursor: pointer;
+    /*カーソルをポインターの形（かたち）にする*/
+}
+
 /* media Query..while seeing in mbl style:*/
 @media screen and (max-width: 480px) {
     body {
@@ -191,18 +205,4 @@ footer>p {
     #omikujiText {
         margin: 0;
     }
-}
-
-.back {
-    text-align: left;
-}
-
-#btn99 {
-    padding: 0.5em;
-    border-radius: 0.3em;
-    color: whitesmoke;
-    font-size: 1.5em;
-    background: rgb(26, 212, 212);
-    cursor: pointer;
-    /*カーソルをポインターの形（かたち）にする*/
 }

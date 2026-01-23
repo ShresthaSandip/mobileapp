@@ -111,7 +111,7 @@ table1.addEventListener("click", (e) => {
         let index = e.target.parentNode.parentNode.rowIndex
         const key = table1.rows[index].cells[1].firstChild.data;
         const value = table1.rows[index].cells[2].firstChild.data;
-        let w_delete = "LocalStorageから\n「$(key) ${value}」\nを削除しますか?";
+        let w_delete = "LocalStorageから\n[" + key + " " + value +"]\nを削除しますか?";
         Swal.fire({
             title: "Memo app",
             html: w_delete,
@@ -121,7 +121,7 @@ table1.addEventListener("click", (e) => {
             if (result.value === true) {
                 localStorage.removeItem(key);
                 viewStorage();
-                let w_msg = "LocalStorageから$(key) ${value}を削除(delete)しました!";
+                let w_msg = "LocalStorageからn[" + key + " " + value +"]\nを削除(delete)しました!";
                 Swal.fire({
                     title: "Memo app"
                     , html: w_msg
